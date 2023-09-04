@@ -1,0 +1,132 @@
+.home-main {
+  background: url("../images/bg\ 1.png") center center fixed no-repeat ;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.main-content {
+  color: black;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  position:absolute
+}
+
+.main-content h1 {
+  font-size: 3rem;
+}
+
+.main-content p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: black;
+}
+
+.btn {
+  width: 200px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  background-image: linear-gradient(
+    to right,
+    #fff9f9 0%,
+    #bcbcbd 51%,
+    #4d4e4e 100%
+  );
+  border-radius: 20px;
+  background-size: 200% auto;
+  transition: 0.3s ease-in-out;
+  margin: top 1.5rem;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-position: right center;
+}
+
+@media screen and (max-width: 600px) {
+  .main-content h1 {
+    font-size: 2rem;
+    
+  }
+  .main-content p {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    width: 175px;
+    height: 40px;
+    font-size: 0.8rem;
+  }
+}
+
+.about {
+  padding: 1rem;
+  text-align: center;
+}
+
+.about h1 {
+  font-size: 3rem;
+}
+
+.about-sub {
+  display: flex;
+  max-width: 800px;
+  margin: 1rem auto;
+  text-align: left;
+}
+
+.about-sub > img {
+  max-height: 300px;
+  width: 300px;
+  max-width: 90%;
+  animation: animateimage 1s linear;
+}
+
+@keyframes animateimage {
+  from {
+    transform: translateY(-15px);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.about-sub .sub-sub-about {
+  padding: 1rem;
+  animation: animatetext 1s linear;
+}
+
+@keyframes animatetext {
+  from {
+    transform: translateY(15px);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.about-sub .sub-sub-about p {
+  font-size: 20px;
+  margin: 1rem 0;
+}
+
+@media screen and (max-width: 600px) {
+  .about-sub {
+    flex-direction: column;
+  }
+  .about-sub:last-child {
+    flex-direction: column-reverse;
+  }
+}
+
+
+
