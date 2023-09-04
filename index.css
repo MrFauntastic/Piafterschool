@@ -1,5 +1,5 @@
 .home-main {
-  background: url("../images/bg\ 1.png") center center fixed no-repeat ;
+  background: url("./1.png") center center fixed no-repeat ;
   background-size: cover;
   min-height: 100vh;
 }
